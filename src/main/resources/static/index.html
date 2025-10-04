@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alumni Connect Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f8f9fa; color: #222; }
+        header { background: #03396c; color: white; padding: 1rem 2rem; text-align: center; }
+        nav { background: #005b96; display: flex; justify-content: center; gap: 2rem;}
+        nav a { color: white; padding: 1rem; text-decoration: none; font-weight: 500; transition: background 0.3s;}
+        nav a:hover { background: #6497b1; border-radius: 4px;}
+        .container { max-width: 940px; margin: 2rem auto; background: white; box-shadow: 0 2px 10px #eee; border-radius: 8px; padding: 2rem;}
+        h2 { color: #03396c;}
+        .cards { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .card { flex: 1 1 220px; background: #eef; border-radius: 6px; box-shadow: 0 1px 4px #ccc; padding: 1rem; }
+        .btn { display: inline-block; background: #005b96; color: white; padding: 0.6em 1.2em; border: none; border-radius: 4px; text-decoration: none; font-size: 1em; margin-top: 1rem;}
+        .btn:hover { background: #03396c; cursor: pointer;}
+        @media (max-width: 700px) { .cards { flex-direction: column; } }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Alumni Connect Portal</h1>
+    <p>Connecting Admins, Teachers, Current Students and Alumni</p>
+</header>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Events</a>
+    <a href="#">Jobs</a>
+    <a href="#">Gallery</a>
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+</nav>
+<div class="container">
+    <h2>Welcome to the Alumni Portal</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Admin</h3>
+            <p>Manage users, events, jobs and site content.</p>
+            <a class="btn" href="/admin/login">Admin Dashboard</a>
+        </div>
+        <div class="card">
+            <h3>Teacher</h3>
+            <p>Interact with alumni and students, post opportunities.</p>
+            <a class="btn" href="/teacher/login">Teacher Login</a>
+        </div>
+        <div class="card">
+            <h3>Current Student</h3>
+            <p>Join events, connect with mentors and alumni.</p>
+            <a class="btn" href="/student/login">Student Login</a>
+        </div>
+        <div class="card">
+            <h3>Alumni</h3>
+            <p>Network, mentor students, and post jobs.</p>
+            <a class="btn" href="/alumni/login">Alumni Login</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
